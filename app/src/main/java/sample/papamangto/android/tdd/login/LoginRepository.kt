@@ -9,4 +9,8 @@ class LoginRepository : LoginContract.Repository {
             return INSTANCE ?: LoginRepository().apply { INSTANCE = this }
         }
     }
+
+    override fun login(email: String, password: String, callback: LoginResultCallback) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 }
